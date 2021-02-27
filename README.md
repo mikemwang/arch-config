@@ -46,6 +46,13 @@ update: this doesn't work. encountered the same problem as with i3 on ldm. give 
 create the ~/.config/nvim/ dir
 remember to pip install neovim
 
+## fonts
+go here: https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/LiberationMono/complete/Literation%20Mono%20Bold%20Nerd%20Font%20Complete.ttf
+go to patched-fonts/LiberationMono/complete, pick the Bold, Italic, Bold Italic, and normal versions and download them
+copy to the /usr/share/fonts/TTF folder
+fc-cache -v
+fc-list : family style : grep Literation 
+
 # todos
  - commit the alacritty config
  - get fantome theme for alacritty and vim?
