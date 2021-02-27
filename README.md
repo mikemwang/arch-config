@@ -43,6 +43,8 @@ note: don't change your lutris cache location!
 update: this doesn't work. encountered the same problem as with i3 on ldm. give up on this for now
 
 ## neovim
+create the ~/.config/nvim/ dir
+remember to pip install neovim
 
 # todos
  - commit the alacritty config
