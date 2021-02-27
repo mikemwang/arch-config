@@ -150,7 +150,7 @@ font:
     style: Bold Italic
 
   # Point size
-  size: 11.0
+  size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
@@ -297,7 +297,7 @@ font:
 # Bell
 #
 # The bell is rung every time the BEL control character is received.
-#bell:
+bell:
   # Visual Bell Animation
   #
   # Animation effect for flashing the screen when the visual bell is rung.
@@ -313,14 +313,14 @@ font:
   #   - EaseOutExpo
   #   - EaseOutCirc
   #   - Linear
-  #animation: EaseOutExpo
+  animation: EaseOutExpo
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
-  #duration: 0
+  duration: 500
 
   # Visual bell animation color.
-  #color: '#ffffff'
+  color: '#ffffff'
 
   # Bell Command
   #
@@ -811,83 +811,64 @@ shell:
   # Print all received window events.
   #print_events: false
 
-#colors:
-#  # Default colors
-#  primary:
-#    background: '#2c2c2c'
-#    foreground: '#d6d6d6'
-#
-#    dim_foreground:    '#dbdbdb'
-#    bright_foreground: '#d9d9d9'
-#    dim_background:    '#202020' # not sure
-#    bright_background: '#3a3a3a' # not sure
-#
-#  # Cursor colors
-#  cursor:
-#    text:   '#2c2c2c'
-#    cursor: '#d9d9d9'
-#
-#  # Normal colors
-#  normal:
-#    black:   '#1c1c1c'
-#    red:     '#bc5653'
-#    green:   '#909d63'
-#    yellow:  '#ebc17a'
-#    blue:    '#7eaac7'
-#    magenta: '#aa6292'
-#    cyan:    '#86d3ce'
-#    white:   '#cacaca'
-#
-#  # Bright colors
-#  bright:
-#    black:   '#636363'
-#    red:     '#bc5653'
-#    green:   '#909d63'
-#    yellow:  '#ebc17a'
-#    blue:    '#7eaac7'
-#    magenta: '#aa6292'
-#    cyan:    '#86d3ce'
-#    white:   '#f7f7f7'
-#
-#  # Dim colors
-#  dim:
-#    black:   '#232323'
-#    red:     '#74423f'
-#    green:   '#5e6547'
-#    yellow:  '#8b7653'
-#    blue:    '#556b79'
-#    magenta: '#6e4962'
-#    cyan:    '#5c8482'
-#    white:   '#828282'
+schemes:
+  # Tokyo Night theme, based on both:
+  #   https://github.com/ghifarit53/tokyonight-vim
+  #   https://github.com/enkia/tokyo-night-vscode-theme
+  tokyo-night: &tokyo-night
+    # Default colors
+    primary:
+      background: '0x1a1b26'
+      foreground: '0xa9b1d6'
 
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x787c99'
 
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
 
-# Colors (Dracula)
-colors:
-  # Default colors
-  primary:
-    background: '#282a36'
-    foreground: '#f8f8f2'
+  tokyo-night-storm: &tokyo-night-storm
+    # Default colors
+    primary:
+      background: '0x24283b'
+      foreground: '0xa9b1d6'
 
-  # Normal colors
-  normal:
-    black:   '#000000'
-    red:     '#ff5555'
-    green:   '#50fa7b'
-    yellow:  '#f1fa8c'
-    blue:    '#caa9fa'
-    magenta: '#ff79c6'
-    cyan:    '#8be9fd'
-    white:   '#bfbfbf'
+    # Normal colors
+    normal:
+      black:   '0x32344a'
+      red:     '0xf7768e'
+      green:   '0x9ece6a'
+      yellow:  '0xe0af68'
+      blue:    '0x7aa2f7'
+      magenta: '0xad8ee6'
+      cyan:    '0x449dab'
+      white:   '0x9699a8'
 
-  # Bright colors
-  bright:
-    black:   '#575b70'
-    red:     '#ff6e67'
-    green:   '#5af78e'
-    yellow:  '#f4f99d'
-    blue:    '#caa9fa'
-    magenta: '#ff92d0'
-    cyan:    '#9aedfe'
-      #white:   '#e6e6e6'
-    white:   '#ffffff'
+    # Bright colors
+    bright:
+      black:   '0x444b6a'
+      red:     '0xff7a93'
+      green:   '0xb9f27c'
+      yellow:  '0xff9e64'
+      blue:    '0x7da6ff'
+      magenta: '0xbb9af7'
+      cyan:    '0x0db9d7'
+      white:   '0xacb0d0'
+
+colors: *tokyo-night
