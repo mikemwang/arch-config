@@ -42,6 +42,8 @@ pacman -S lutris, then follow the steps on the lutris lol site
 note: don't change your lutris cache location!
 update: this doesn't work. encountered the same problem as with i3 on ldm. give up on this for now
 
+## neovim
+
 # todos
  - commit the alacritty config
  - get fantome theme for alacritty and vim?

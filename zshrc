@@ -100,5 +100,5 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# need to do this for proper terminal text wrapping
-export LANG="en_US"
+# need to do this for proper terminal text wrapping. make sure to use utf-8
+export LANG="en_US.UTF-8"
