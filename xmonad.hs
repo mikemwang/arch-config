@@ -255,7 +255,7 @@ myStartupHook = do
 -- 
 -- Make xmobar show up on display 0
 main = do 
-  xmproc <- spawnPipe "xmobar /home/mike/.xmobarrc &"
+  xmproc <- spawnPipe "xmobar -x 0 /home/mike/.xmobarrc &"
   xmonad $ docks defaults
 
 -- A structure containing your configuration settings, overriding
