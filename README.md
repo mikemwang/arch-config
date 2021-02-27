@@ -54,11 +54,8 @@ fc-cache -v
 fc-list : family style : grep Literation 
 
 # todos
- - commit the alacritty config
  - get fantome theme for alacritty and vim?
- - commit xmonad config
  - create kdeconnect commands to bring up a single workspace with a single firefox instance with higher
 zoom for easier browsing (and larger mouse?)
- - redo the vim config
  - configure xmobar
 
