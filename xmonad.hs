@@ -54,8 +54,12 @@ myFocusedBorderColor = "#faa5f7"
 --
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
 
+
     -- launch a terminal
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
+
+    -- launch firefox
+    , ((modm,               xK_f     ), spawn "firefox &")
 
     -- launch dmenu
     , ((modm,               xK_p     ), spawn "dmenu_run")
@@ -255,7 +259,7 @@ myStartupHook = do
 -- 
 -- Make xmobar show up on display 0
 main = do 
-  xmproc <- spawnPipe "xmobar -x 0 /home/mike/.xmobarrc &"
+  xmproc <- spawnPipe "xmobar -x 0 /home/mike/.config/xmobar/xmobarrc &"
   xmonad $ docks defaults
 
 -- A structure containing your configuration settings, overriding
