@@ -8,9 +8,9 @@ endif
 "do plugin install
 call plug#begin()
 "Plug 'https://github.com/junegunn/seoul256.vim.git'
-"Plug 'git@github.com:vim-airline/vim-airline.git'
-"Plug 'git@github.com:preservim/nerdtree.git'
-Plug 'https://github.com/morhetz/gruvbox.git'
+Plug 'git@github.com:vim-airline/vim-airline.git'
+Plug 'git@github.com:preservim/nerdtree.git'
+Plug 'franbach/miramare'
 "Plug 'https://github.com/vim-syntastic/syntastic.git'
 "Plug 'https://github.com/Shougo/deoplete.nvim.git'
 "Plug 'https://github.com/numirias/semshi.git'
@@ -62,7 +62,10 @@ set showcmd
 " hybrid line numbering
 set number relativenumber
 
-colo gruvbox
+set termguicolors
+let g:miramare_enable_italic = 1
+let g:miramare_disable_italic_comment = 1
+colo miramare
 
 " NERDTREE OPTIONS
 " auto nerdtree if entering dir
@@ -81,6 +84,7 @@ set cul cuc
 
 " show a line at 80 chars
 set colorcolumn=80
+highlight ColorColumn ctermbg=0 guibg='#111111'
 
 " terminal commands
 tnoremap jk <C-\><C-n>
