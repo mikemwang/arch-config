@@ -243,11 +243,10 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-    spawnOnce "nitrogen --restore &"
-    spawnOnce "compton &"
+    spawnOnce "xset r rate 200 25 &"  -- faster key repeat
+    spawnOnce "nitrogen --restore &"  -- desktop
+    spawnOnce "compton &"             -- compositor (is this really needed?)
     spawnOnce "/usr/lib/org_kde_powerdevil &"  --for some reason we have to start this manually
-
-
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
