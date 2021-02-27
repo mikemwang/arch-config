@@ -11,6 +11,7 @@ call plug#begin()
 Plug 'git@github.com:vim-airline/vim-airline.git'
 Plug 'git@github.com:preservim/nerdtree.git'
 Plug 'franbach/miramare'
+Plug 'ryanoasis/vim-devicons'
 "Plug 'https://github.com/vim-syntastic/syntastic.git'
 "Plug 'https://github.com/Shougo/deoplete.nvim.git'
 "Plug 'https://github.com/numirias/semshi.git'

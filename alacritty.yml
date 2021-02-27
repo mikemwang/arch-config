@@ -111,10 +111,10 @@ font:
     #  - (macOS) Menlo
     #  - (Linux/BSD) monospace
     #  - (Windows) Consolas
-    family: monospace
+    family: LiterationMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
-    style: Regular
+    style: Book
 
   # Bold font face
   bold:
@@ -122,7 +122,7 @@ font:
     #
     # If the bold family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: monospace
+    family: LiterationMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Bold
@@ -133,7 +133,7 @@ font:
     #
     # If the italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: monospace
+    family: LiterationMono Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Italic
@@ -144,12 +144,12 @@ font:
     #
     # If the bold italic family is not specified, it will fall back to the
     # value specified for the normal font.
-    family: monospace
+    family: LiterationMono Nerd Font
 
-    # The `style` can be specified to pick a specific face.
-    style: Bold Italic
+  #  # The `style` can be specified to pick a specific face.
+  #  style: Bold Italic
 
-  # Point size
+  ## Point size
   size: 10.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
@@ -313,14 +313,14 @@ bell:
   #   - EaseOutExpo
   #   - EaseOutCirc
   #   - Linear
-  animation: EaseOutExpo
+  animation: Ease
 
   # Duration of the visual bell flash in milliseconds. A `duration` of `0` will
   # disable the visual bell animation.
-  duration: 500
+  duration: 100
 
   # Visual bell animation color.
-  color: '#ffffff'
+  color: '#111111'
 
   # Bell Command
   #
