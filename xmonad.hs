@@ -243,8 +243,9 @@ myLogHook = return ()
 --
 -- By default, do nothing.
 myStartupHook = do
-        spawnOnce "nitrogen --restore &"
-        spawnOnce "compton &"
+    spawnOnce "nitrogen --restore &"
+    spawnOnce "compton &"
+    spawnOnce "/usr/lib/org_kde_powerdevil &"  --for some reason we have to start this manually
 
 
 
